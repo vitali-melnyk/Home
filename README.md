@@ -1,6 +1,6 @@
 # Home
 
-Command for lesson #3-4-5
+Command for lesson #3-4
 
 # create docker image
 docker build -t alp-git:1.0 -f Dockerfile.alp .
