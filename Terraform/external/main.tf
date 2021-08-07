@@ -1,7 +1,7 @@
 data "external" "echo" {
-  program = ["bash", "-c", "cat /dev/stdin"]
+  program = ["bash", "-c", "cat test.crt"]
   query = {
-    "foo" = "bar"
+    "foo1" = "bar1", "foo3" = "bar3"
   }
 }
 
@@ -10,5 +10,5 @@ output "echo" {
 }
 
 output "echo_foo" {
-  value = data.external.echo.result.foo
+  value = data.external.echo.result.foo2
 }
